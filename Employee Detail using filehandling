@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+void main()
+{
+    FILE *p;
+    char Name[50];
+    char Address[50];
+    int id;
+    char batch[30];
+    char company[50];
+    
+    //char a[50];
+    p=fopen("Sachin.txt","w+");
+    if(p==NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+    printf("Please provide the necessary detail of employ");
+    printf("Name:-\n");
+    scanf("%s",&Name);
+      fprintf(p, "Name= %s\n", Name); 
+    printf("Address :\n");
+    scanf("%s",&Address);
+      fprintf(p, "Address= %s\n", Address); 
+    printf("Employee ID :\n");
+    scanf("%d",&id);
+    fprintf(p, "Id= %d\n", id); 
+    printf("Batch :%s\n",batch);
+    scanf("%s",&batch);
+      fprintf(p, "batch= \n"); 
+    printf("Company :\n");
+    scanf("%s",&company);
+      fprintf(p, "company= %s\n", company); 
+    fclose(p);
+    //fprintf("Radhe Radhe");
+    getch();
+}
