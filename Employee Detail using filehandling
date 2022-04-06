@@ -7,8 +7,11 @@ void main()
     char Name[50];
     char Address[50];
     int id;
+    int i;
+    int n=0;
     char batch[30];
     char company[50];
+    char designation[50];
     
     //char a[50];
     p=fopen("Sachin.txt","w+");
@@ -17,8 +20,16 @@ void main()
         printf("error");
         exit(1);
     }
+    printf("PLEASE ENTER THE NUMBER OF EMPLOYEES IN COMPAMNY:\n");
+    scanf("%d",&n);
+    fprintf("NUMBER OF EMPLOYEE :\n",n);
+    for(i=0;i<=n;i++);
+    {
     printf("Please provide the necessary detail of employ");
-    printf("Name:-\n");
+    printf("Company :\n");
+    scanf("%s",&company);
+      fprintf(p, "company= %s\n", company);
+   printf("Name:-\n");
     scanf("%s",&Name);
       fprintf(p, "Name= %s\n", Name); 
     printf("Address :\n");
@@ -30,9 +41,10 @@ void main()
     printf("Batch :%s\n",batch);
     scanf("%s",&batch);
       fprintf(p, "batch= \n"); 
-    printf("Company :\n");
-    scanf("%s",&company);
-      fprintf(p, "company= %s\n", company); 
+       printf("designation :\n");
+    scanf("%s",&designation);
+      fprintf(p, "designation= %s\n", designation);
+   } 
     fclose(p);
     //fprintf("Radhe Radhe");
     getch();
