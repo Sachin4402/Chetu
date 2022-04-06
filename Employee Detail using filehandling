@@ -23,7 +23,7 @@ void main()
     printf("PLEASE ENTER THE NUMBER OF EMPLOYEES IN COMPAMNY:\n");
     scanf("%d",&n);
     fprintf(p,"NUMBER OF EMPLOYEE :\n",n);
-    for(i=0;i<=n;i++);
+    for(i=0;i<=n;i++)
     {
     printf("Please provide the necessary detail of employ");
     printf("Company :\n");
