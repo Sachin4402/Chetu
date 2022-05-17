@@ -1,0 +1,44 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+   int i;
+    int sum=0,sum1=0;
+    int a[5],b[5];
+    // for(int i=0;i<5;i++)
+  
+int main()
+{
+    cout<<"Enter element of Queue"<<endl;
+   for(int i=0;i<5;i++)
+    cin>>a[i];
+    cout<<"Elements are ";
+    for(int i=0;i<5;i++)
+    cout<<a[i]<<"\t";
+ for(i = 0; i < 5; i++)
+      sum = sum + a[i];
+     cout<<endl<<"Sum of first array:-   "<<sum<<endl;
+//*************************************************************************************************************************//     
+      cout<<"Enter element of Queue2"<<endl;
+   for(int i=0;i<5;i++)
+    cin>>b[i];
+    cout<<"Elements are ";
+    for(int i=0;i<5;i++)
+    cout<<b[i]<<"\t";
+ for(i = 0; i < 5; i++)
+      sum1 = sum1 + b[i];
+     cout<<endl<<"Sum of 2nd array is :- "<<sum1;
+     //*******************************************************************************************************************//
+     if(sum<sum1)
+     {
+         cout<<endl<<"Sum of 1st array is smaller than 2nd ";
+     }
+     else if(sum>sum1)
+     {
+         cout<<endl<<"Sum of 1st array is greater than 2nd ";
+     }
+     else
+     {
+      cout<<endl<<"Sum of 1st array is eequal to  2nd ";   
+     }
+return 0;
+}
