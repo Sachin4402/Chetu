@@ -1,0 +1,58 @@
+#include<iostream>
+#include<queue>
+using namespace std;
+void empty();
+void full();
+void insert();
+void delet();
+int size,rear,front,var[1000];
+void empty()
+{
+    if(rear<size && front == 0)
+    cout<<endl<<"Empty Queue ...You can insert ";
+    void insert();
+}
+void full()
+{
+    if(rear==size && rear==front )
+    cout<<endl<<"Queue is full .... You can deque/delete elements";
+    void delet();
+    
+}
+void insert()
+{
+    for(int i=0;i<size;i++)
+   { 
+     cin>>var[i];
+    rear++;
+       
+   }
+    cout<<"Rear  "<<rear<<endl;
+    for(int i=0;i<size;i++)
+        
+        cout<<var[i]<<"\t";
+   
+}
+void delet()
+{   
+    for(int i=rear;i<=size-1;i++)
+    {
+    var[i]=var[i+1];
+    front++;
+        
+    }
+    cout<<"Front  "<<front<<endl;
+    cout<<"after deque  ";
+   {  for(int i=0;i<size;i++)
+    cout<< var[i]<<"\n";}
+    
+}
+int main(){
+    cout<<"Enter Size of Queue  ";
+    cin>>size;
+   empty();
+    insert();
+    full();
+    delet();//sorry delete is not working properly  
+    
+}
